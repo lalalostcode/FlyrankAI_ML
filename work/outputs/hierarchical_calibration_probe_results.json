@@ -1,0 +1,41 @@
+{
+  "stage": "cross_fitted_hierarchical_calibration_diagnostic",
+  "clients": 32,
+  "client_predictor_features": 53,
+  "benchmark_mean_p_at_50": 0.9239999999999998,
+  "calibrated_mean_p_at_50": 0.9239999999999998,
+  "improvement_pp": 0.0,
+  "folds": [
+    {
+      "fold": 1,
+      "selected_alpha": 0.0,
+      "training_mean_p_at_50": 0.9349999999999999,
+      "test_p_at_50": 0.88
+    },
+    {
+      "fold": 2,
+      "selected_alpha": 0.0,
+      "training_mean_p_at_50": 0.9199999999999999,
+      "test_p_at_50": 0.94
+    },
+    {
+      "fold": 3,
+      "selected_alpha": 0.0,
+      "training_mean_p_at_50": 0.9199999999999999,
+      "test_p_at_50": 0.94
+    },
+    {
+      "fold": 4,
+      "selected_alpha": 0.0,
+      "training_mean_p_at_50": 0.9299999999999999,
+      "test_p_at_50": 0.9
+    },
+    {
+      "fold": 5,
+      "selected_alpha": 0.0,
+      "training_mean_p_at_50": 0.9149999999999999,
+      "test_p_at_50": 0.96
+    }
+  ],
+  "target_achieved": false
+}

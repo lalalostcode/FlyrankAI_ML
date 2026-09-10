@@ -1,0 +1,42 @@
+{
+  "artifact": "capstone_paper_v1",
+  "question": "Can a client-grouped learning-to-rank model prioritize current content-decline reviews more precisely than a transparent fixed rule at the top 50 slots?",
+  "source_rows": 30000,
+  "client_groups": 32,
+  "random_state": 42,
+  "selected_model": "B2_current_rank_blend",
+  "validation": {
+    "folds": 5,
+    "mean_fold_base_rate": 0.5444050660709328,
+    "rule_mean_p_at_50": 0.4640000000000001,
+    "rule_std_p_at_50": 0.15709869509324387,
+    "model_mean_p_at_50": 0.9239999999999998,
+    "model_std_p_at_50": 0.03286335345030994,
+    "model_mean_roc_auc": 0.6431108799696912,
+    "model_mean_average_precision": 0.683957086539744,
+    "model_mean_lift_at_50": 1.7634233879233723,
+    "model_fold_p_at_50": [
+      0.88,
+      0.94,
+      0.94,
+      0.9,
+      0.96
+    ]
+  },
+  "shadow_candidate": {
+    "name": "A11_current_plus_top20_equal",
+    "mean_p_at_50": 0.9279999999999999,
+    "gain_pp": 0.40000000000001146,
+    "target_achieved": false,
+    "status": "not promoted"
+  },
+  "queue_rows": 1473,
+  "required_paper_sections_verified": 13,
+  "artifact_sha256": {
+    "work\\capstone_report.md": "e7b8bee1a56d201013245ad455b0fafdaa082eb0beb54dcccd5c51670bcfb22a",
+    "work\\outputs\\paper_results_summary.png": "25397ff58c314e8e06fa3e077055aa41723f6bcf13a59d61ab215e5e29479617",
+    "work\\outputs\\action_playbook_summary.png": "7f77a97750e7afbb84125121ea68ca95e617d3d60c7dda86f10c4ff9bbb5a3b0",
+    "work\\outputs\\advanced_ranking_results.json": "cd1d83a8f3c3ce4d2b0ddb7085fa92fe56091d5f7cd6b19b40bdcda8dfd59ee2",
+    "work\\outputs\\action_playbook_metrics.json": "3e7802aa2ac5eeea53e5e5e8644f968a720118fbcc9e13128403ce4b9925de00"
+  }
+}

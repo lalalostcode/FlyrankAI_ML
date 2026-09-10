@@ -1,0 +1,78 @@
+{
+  "artifact": "content_action_playbook_v1",
+  "scope": "cross-client current-snapshot decline ranking; not future forecasting",
+  "selected_model": "B2_current_rank_blend",
+  "selection_status": "conservative benchmark retained",
+  "shadow_model": "A11_current_plus_top20_equal",
+  "shadow_status": "not promoted; same-fold gain +0.4pp, below +5.0pp target",
+  "random_state": 42,
+  "source_rows": 30000,
+  "client_groups": 32,
+  "queue_rows": 1473,
+  "queue_policy": {
+    "max_per_client": 50,
+    "review_now": "ranks 1-10",
+    "review_next": "ranks 11-25",
+    "monitor": "ranks 26-50"
+  },
+  "validation": {
+    "folds": 5,
+    "mean_fold_base_rate": 0.5444050660709328,
+    "mean_precision_at_20": 0.9200000000000002,
+    "mean_precision_at_50": 0.9239999999999998,
+    "std_precision_at_50": 0.03286335345030994,
+    "mean_precision_at_100": 0.8860000000000001,
+    "mean_lift_at_50": 1.7634233879233723,
+    "mean_roc_auc": 0.6431108799696912,
+    "mean_average_precision": 0.683957086539744,
+    "fold_precision_at_50": [
+      0.88,
+      0.94,
+      0.94,
+      0.9,
+      0.96
+    ]
+  },
+  "priority_counts": {
+    "monitor": 695,
+    "review_next": 465,
+    "review_now": 313
+  },
+  "action_counts": {
+    "diagnose_before_action": 658,
+    "inspect_search_snippet": 521,
+    "review_facts_and_freshness": 274,
+    "review_depth_and_relevance": 13,
+    "review_intent_and_experience": 7
+  },
+  "reason_counts": {
+    "model_pattern_needs_diagnosis": 658,
+    "low_ctr_visible": 521,
+    "page_one_aging": 426,
+    "weak_engagement_visible": 21,
+    "thin_visible": 14
+  },
+  "reference_missingness": {
+    "impressions_90d": 0.0,
+    "sessions_90d": 0.0,
+    "avg_position": 0.0,
+    "ctr": 0.0,
+    "engagement_rate": 0.0,
+    "days_since_last_update": 0.0,
+    "word_count": 0.2566333333333333
+  },
+  "monitoring": {
+    "p50_pause_floor": 0.8239999999999998,
+    "performance_alerts_before_pause": 2,
+    "missingness_shift_pp": 5.0,
+    "mix_shift_pp": 15.0,
+    "base_rate_shift_pp": 10.0
+  },
+  "operational_export_excludes": [
+    "fold",
+    "is_declining_label",
+    "shadow_rank_score",
+    "trend_direction",
+    "trend_pct"
+  ]
+}

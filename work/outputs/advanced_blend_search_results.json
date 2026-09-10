@@ -1,0 +1,74 @@
+{
+  "stage": "cross_fitted_weight_selection_diagnostic",
+  "models": [
+    "B0_engineered_lambdarank",
+    "B1_base_lambdarank",
+    "B2_current_rank_blend",
+    "A1_engineered_fold_query_lambdarank",
+    "A3_base_fold_query_lambdarank",
+    "A4_engineered_fold_query_rank_xendcg",
+    "A5_engineered_fold_query_top20"
+  ],
+  "candidate_blends": 507,
+  "benchmark_mean_p_at_50": 0.9239999999999998,
+  "cross_fitted_mean_p_at_50": 0.924,
+  "improvement_pp": 2.220446049250313e-14,
+  "folds": [
+    {
+      "fold": 1,
+      "training_mean_p_at_50": 0.94,
+      "number_of_tied_candidates": 12,
+      "test_p_at_50": 0.92,
+      "mean_nonzero_weights": {
+        "B0_engineered_lambdarank": 0.07500000000000001,
+        "B1_base_lambdarank": 0.5249999999999999,
+        "B2_current_rank_blend": 0.325,
+        "A5_engineered_fold_query_top20": 0.07499999999999998
+      }
+    },
+    {
+      "fold": 2,
+      "training_mean_p_at_50": 0.95,
+      "number_of_tied_candidates": 4,
+      "test_p_at_50": 0.92,
+      "mean_nonzero_weights": {
+        "B1_base_lambdarank": 0.55,
+        "A5_engineered_fold_query_top20": 0.44999999999999996
+      }
+    },
+    {
+      "fold": 3,
+      "training_mean_p_at_50": 0.945,
+      "number_of_tied_candidates": 6,
+      "test_p_at_50": 0.94,
+      "mean_nonzero_weights": {
+        "B0_engineered_lambdarank": 0.05000000000000001,
+        "B1_base_lambdarank": 0.7083333333333334,
+        "A5_engineered_fold_query_top20": 0.2416666666666666
+      }
+    },
+    {
+      "fold": 4,
+      "training_mean_p_at_50": 0.945,
+      "number_of_tied_candidates": 1,
+      "test_p_at_50": 0.92,
+      "mean_nonzero_weights": {
+        "B0_engineered_lambdarank": 0.30000000000000004,
+        "B1_base_lambdarank": 0.6,
+        "A5_engineered_fold_query_top20": 0.09999999999999998
+      }
+    },
+    {
+      "fold": 5,
+      "training_mean_p_at_50": 0.945,
+      "number_of_tied_candidates": 4,
+      "test_p_at_50": 0.92,
+      "mean_nonzero_weights": {
+        "B1_base_lambdarank": 0.55,
+        "A5_engineered_fold_query_top20": 0.44999999999999996
+      }
+    }
+  ],
+  "oracle_foldwise_mean_p_at_50_not_valid": 0.976,
+  "target_achieved": false
+}
